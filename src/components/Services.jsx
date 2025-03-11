@@ -14,7 +14,7 @@ const ServicesCard = ({ icon, title, descr }) => {
 
 export default function Services() {
   return (
-    <div className="flex services flex-col gap-[20px]">
+    <div className="flex services flex-col gap-[20px] mt-[60px]">
       <h2>Деревянные поддоны и ящики</h2>
       <div className="cards">
         <ServicesCard 
