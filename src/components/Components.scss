@@ -1,0 +1,261 @@
+header {
+    position: fixed;
+    top: 20px;
+    .header_ins {
+        border-radius: 2222px;
+        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 17px 14.747px 34px;
+        .logoCtr {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .links {
+            display: flex;
+            list-style: none;
+            li {
+                transition: all .2s ease-in-out;
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+            a {
+                padding: 15px 22px;
+                text-decoration: none;
+                color: #646464;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.sliderSection {
+    margin-top: 140px;
+    height: 636px;
+    padding: var(--Radius-Sharp, 0px) 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    @media (max-width: 576px){
+      padding: 10px !important;
+      border-radius: 0px !important;
+    }
+    .info {
+        display: flex;
+        color: white;
+        width: 100%;
+        max-width: 1156px;
+        .infoCtr {
+            display: flex;   
+            justify-content: end;
+            align-items: center;
+            .texts {
+                width: 100%;
+                max-width: 825px;
+            }
+            @media (max-width: 576px){
+                flex-direction: column;
+            }
+            img {
+                width: 100%;
+                max-width: 285px;
+            }
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+        .sliderBtn {
+          padding: 15px 32px;
+          border-radius: var(--Spacing-xl, 40px);
+          background: var(--Base-Base-White, #FFF);
+          color: var(--Primary-Primary, #009FF5);
+          font-size: 16px;
+          font-weight: 500;
+          width: fit-content;
+        }
+    }
+    .bgImages {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        right: 0;
+        .bgImage {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    }
+}
+
+.cursSlide {
+  .slide {
+    background-position: center;
+    border-radius: 30px;
+    padding: 30px 10px;
+    .path {
+      display: inline-flex;
+      padding: 8px 18px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 10px;
+      background: #FFF;
+    }
+    .mainInfo {
+      color: white;
+      width: 100%;
+      max-width: 507px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .rateInfo {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        span {
+          color: #FFAD41;
+          font-weight: 700;
+          font-size: 16px;
+        }
+        .stars {
+          display: flex;
+          width: 120px;
+        }
+      }
+      .tutorLangInfo {
+        img {
+          width: 24px;
+        }
+        .tutorName {
+          font-size: 14px;
+          color: var(--Primary-Primary, #009FF5);
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: none;
+          text-decoration-thickness: auto;
+          text-underline-offset: auto;
+          text-underline-position: from-font;
+        }
+      }
+    }
+    .info-cards {
+      display: flex;
+      gap: 8px;
+      margin-top: 51px;
+      align-items: center;
+      .infoCard {
+        display: flex;
+        padding: 14px 14px 14px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+        max-width: 286px;
+        border-radius: 24px;
+        height: 124px;
+        background: #FFF;
+      }
+    }
+  }
+}
+
+.progressContainer {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .progressSegment {
+    width: 100px; /* Ширина сегмента */
+    height: 5px;
+    background-color: #6E7586; /* Цвет для незаполненной части */
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    @media (max-width: 576px){
+        width: 60px;
+    }
+  }
+  
+  .progressBar {
+    border-radius: 20px;
+    height: 100%;
+    background-color: #ffffffa6; /* Цвет прогресс-линии (заполняется) */
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+  }
+  
+
+  .slider-container {
+    width: 100%; /* Контейнер занимает всю ширину */
+    overflow: hidden; /* Скрыть содержимое за границами */
+  }
+  
+  .slide img {
+    width: 100%; /* Адаптивное изображение */
+    height: auto;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .sliderSection {
+        padding: var(--Radius-Sharp, 0px) 18px;
+    }
+}
+
+
+.services {
+    .cards {
+        display: flex;
+        align-items: flex-end;
+        gap: 24px;
+        align-self: stretch;
+        .card {
+            width: 100%;
+            max-width: 330px;
+            height: 364px;
+            border-radius: 20px;
+            background: linear-gradient(39deg, rgba(255, 255, 255, 0.00) 52.45%, rgba(0, 105, 255, 0.20) 94.48%), #FFF;
+            padding: 34px 25px;
+            img {
+                width: 60px;
+            }
+            p {
+                font-size: 18px;
+                color: #BAAFAF;
+                font-weight: 400;
+            }
+        } 
+    }
+}
+
+.bannerParagraph {
+    padding: 34px 157px 34px 34px;
+    border-radius: 20px;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.00) -24.35%, rgba(0, 105, 255, 0.20) 88.81%), #FFF;
+    width: 100%;
+    color: #0069FF;
+    font-size: 20px;
+    font-weight: 500;
+
+}

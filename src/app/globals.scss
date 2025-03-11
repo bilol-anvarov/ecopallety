@@ -1,0 +1,56 @@
+@import './app.css';
+
+
+html {
+    background-color: #F8F8F8;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: "Inter", sans-serif;
+    outline: none;
+}
+
+
+.defCtr {
+    width: 99%;
+    max-width: 1392px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.defBtn {
+    padding: 15px 32px;
+    border-radius: var(--Spacing-xl, 40px);
+    background: var(--Base-Base-White, #FFF);
+    color: var(--Primary-Primary, #009FF5);
+    font-size: 16px;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+
+} 
+
+
+h2 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
