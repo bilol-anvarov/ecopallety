@@ -41,6 +41,20 @@ body {
   cursor: pointer;
 }
 
+.secondaryBtn {
+  padding: 15px 32px;
+  border-radius: 111px;
+  background: var(--Base-Base-White, #FFF);
+  color: var(--Primary-Primary, #0069FF);
+  font-size: 16px;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #CEE4FF;
+  cursor: pointer;
+}
+
 h2 {
   color: #000;
   font-size: 32px;
