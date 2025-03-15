@@ -358,14 +358,43 @@ header .header_ins .links a:hover {
   border-radius: 20px;
   background: #FFF;
 }
-.imgInfo .info h4 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-}
 .imgInfo .info p {
   font-size: 18px;
   color: #666;
   line-height: 150%; /* 27px */
   font-weight: 500;
+}
+
+.acceptingCtr {
+  background-image: url("/image 27.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+.acceptingCtr h4 {
+  color: white;
+}
+.acceptingCtr p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+.acceptingCtr ul {
+  list-style: inside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+}
+.acceptingCtr ul li {
+  list-style: inside;
 }

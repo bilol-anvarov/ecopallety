@@ -5,7 +5,7 @@ const ServicesCard = ({ icon, title, descr }) => {
     <div className="card flex flex-col justify-between">
       <img src={icon || "/"} alt="icon" />
       <div className="info flex flex-col gap-[23px]">
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <p>{descr}</p>
       </div>
     </div>

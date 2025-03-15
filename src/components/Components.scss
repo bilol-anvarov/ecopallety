@@ -271,16 +271,38 @@ header {
     gap: 40px;
     border-radius: 20px;
     background: #FFF;
-    h4 {
-      font-size: 24px;
-      font-weight: 600;
-      color: #000;
-    }
     p {
       font-size: 18px;
       color: #666;
       line-height: 150%; /* 27px */
       font-weight: 500;
+    }
+  }
+}
+
+.acceptingCtr {
+  background-image: url('/image 27.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  h4 {
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+  ul {
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    li {
+      list-style: inside;
     }
   }
 }
