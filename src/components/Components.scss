@@ -306,3 +306,15 @@ header {
     }
   }
 }
+
+.consultBanner {
+  background-image: url('/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  h2 {
+    color: white;
+    width: 100%;
+    max-width: 541px;
+  }
+}

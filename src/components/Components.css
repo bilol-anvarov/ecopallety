@@ -398,3 +398,15 @@ header .header_ins .links a:hover {
 .acceptingCtr ul li {
   list-style: inside;
 }
+
+.consultBanner {
+  background-image: url("/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+.consultBanner h2 {
+  color: white;
+  width: 100%;
+  max-width: 541px;
+}
