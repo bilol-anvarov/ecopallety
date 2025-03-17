@@ -1,6 +1,7 @@
 header {
     position: fixed;
     top: 20px;
+    z-index: 100;
     .header_ins {
         border-radius: 2222px;
         background: #FFF;
@@ -16,19 +17,14 @@ header {
         .links {
             display: flex;
             list-style: none;
-            li {
-                transition: all .2s ease-in-out;
-                &:hover {
-                    transform: scale(1.02);
-                }
-            }
             a {
                 padding: 15px 22px;
                 text-decoration: none;
                 color: #646464;
                 transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
                 &:hover {
-                    color: black;
+                  color: #0069FF;
                 }
             }
         }
@@ -316,5 +312,107 @@ header {
     color: white;
     width: 100%;
     max-width: 541px;
+  }
+}
+
+.paddonBanner {
+  background-image: url('/Rectangle1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  h2 {
+    color: white;
+    width: 100%;
+    max-width: 541px;
+  }
+  button.thirdBtn {
+    padding: 17px 70px;
+  }
+}
+
+.boxBanner {
+  background-image: url('/Rectangle2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  h2 {
+    color: #0069FF;
+    width: 100%;
+    max-width: 541px;
+  }
+  button.thirdBtn {
+    padding: 17px 70px;
+  }
+}
+
+footer {
+  position: relative;
+  margin-top: 222px;
+  border-radius: 40px 40px 0px 0px;
+  border: 3px solid #CEE4FF;
+  padding: 137px 172px 154.747px 161px;
+  .footerIsland {
+    border-radius: 20px;
+    border: 3px solid #CEE4FF;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 50px 0px rgba(28, 121, 254, 0.31);
+    align-items: center;
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    a {
+      color: black;
+    }
+    .linkCtr {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+    }
+  }
+  .footerIns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info {
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: flex-start;
+      gap: 80px;
+      .linksCtr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        .title {
+          font-size: 24px;
+          font-weight: 400;
+        }
+        .linksIns {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          a {
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            transition: all .2s ease-in-out;
+            &:hover {
+              color: #0069FF;
+            }
+          }
+        }
+      }
+    }
   }
 }

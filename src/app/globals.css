@@ -39,6 +39,12 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.defBtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .secondaryBtn {
@@ -53,6 +59,12 @@ body {
   width: fit-content;
   border: 1px solid #CEE4FF;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.secondaryBtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .thirdBtn {
@@ -69,6 +81,12 @@ body {
   width: fit-content;
   border: 3px solid white;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.thirdBtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 h2 {

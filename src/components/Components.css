@@ -2,6 +2,7 @@
 header {
   position: fixed;
   top: 20px;
+  z-index: 100;
 }
 header .header_ins {
   border-radius: 2222px;
@@ -32,23 +33,16 @@ header .header_ins .links {
   display: flex;
   list-style: none;
 }
-header .header_ins .links li {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-header .header_ins .links li:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
 header .header_ins .links a {
   padding: 15px 22px;
   text-decoration: none;
   color: #646464;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 header .header_ins .links a:hover {
-  color: black;
+  color: #0069FF;
 }
 
 .sliderSection {
@@ -409,4 +403,138 @@ header .header_ins .links a:hover {
   color: white;
   width: 100%;
   max-width: 541px;
+}
+
+.paddonBanner {
+  background-image: url("/Rectangle1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+.paddonBanner h2 {
+  color: white;
+  width: 100%;
+  max-width: 541px;
+}
+.paddonBanner button.thirdBtn {
+  padding: 17px 70px;
+}
+
+.boxBanner {
+  background-image: url("/Rectangle2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+.boxBanner h2 {
+  color: #0069FF;
+  width: 100%;
+  max-width: 541px;
+}
+.boxBanner button.thirdBtn {
+  padding: 17px 70px;
+}
+
+footer {
+  position: relative;
+  margin-top: 222px;
+  border-radius: 40px 40px 0px 0px;
+  border: 3px solid #CEE4FF;
+  padding: 137px 172px 154.747px 161px;
+}
+footer .footerIsland {
+  border-radius: 20px;
+  border: 3px solid #CEE4FF;
+  background: #F8F8F8;
+  -webkit-box-shadow: 0px 4px 50px 0px rgba(28, 121, 254, 0.31);
+          box-shadow: 0px 4px 50px 0px rgba(28, 121, 254, 0.31);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -72px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+footer .footerIsland a {
+  color: black;
+}
+footer .footerIsland .linkCtr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+}
+footer .footerIns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footerIns .info p {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footerIns .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 80px;
+}
+footer .footerIns .links .linksCtr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+}
+footer .footerIns .links .linksCtr .title {
+  font-size: 24px;
+  font-weight: 400;
+}
+footer .footerIns .links .linksCtr .linksIns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+footer .footerIns .links .linksCtr .linksIns a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+footer .footerIns .links .linksCtr .linksIns a:hover {
+  color: #0069FF;
 }
