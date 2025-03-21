@@ -2,7 +2,7 @@ import React from "react";
 
 const FeedbackCard = ({ icon, backImg, title, descr }) => {
   return (
-    <div className="feedbackCard overflow-hidden py-[41px] relative rounded-[20px] w-full max-w-[330px] h-[366px] flex flex-col justify-between bg-[#FFF]">
+    <div className="feedbackCard overflow-hidden py-[41px] relative rounded-[20px] w-[46%] max-w-[330px] h-[366px] flex flex-col justify-between bg-[#FFF]">
       <div className="imgCtr px-[35px]">
         <img src={icon} className="icon w-[55px]" alt="img" />
       </div>

@@ -85,8 +85,8 @@ export default function Home() {
         }
         link={"#!"}
       />
-      <div className="banners flex justify-between gap-[10px]">
-        <div className="paddonBanner max-w-[652px] w-full p-[44px] mt-[60px] flex items-center justify-between">
+      <div className="banners bannersMainPage mt-[60px] flex justify-between gap-[10px]">
+        <div className="paddonBanner max-w-[652px] w-full p-[44px] flex items-center justify-between">
           <h2>Поддоны / Паллеты</h2>
           <Link href={"#!"}>
             <button type="button" className="thirdBtn">
@@ -95,7 +95,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="boxBanner max-w-[652px] w-full p-[44px] mt-[60px] flex items-center justify-between">
+        <div className="boxBanner max-w-[652px] w-full p-[44px] flex items-center justify-between">
           <h2>Деревянные ящики</h2>
           <Link href={"#!"}>
             <button type="button" className="thirdBtn">

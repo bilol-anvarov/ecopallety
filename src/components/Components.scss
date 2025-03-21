@@ -13,20 +13,95 @@ header {
             display: flex;
             align-items: center;
             gap: 20px;
+            :nth-child(2) {
+              display: none;
+            }
         }
         .links {
             display: flex;
             list-style: none;
+            @media (max-width: 576px){
+              &.desktop {
+                display: none;
+              }
+            }
             a {
                 padding: 15px 22px;
                 text-decoration: none;
                 color: #646464;
                 transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out;
+                @media (max-width: 1150px){
+                  padding: 22px 0;
+                }
                 &:hover {
                   color: #0069FF;
                 }
             }
+        }
+        .iconMenu {
+          --gap: 5px;
+          --height-bar: 2.5px;
+          --pos-y-bar-one: 0;
+          --pos-y-bar-three: 0;
+          --scale-bar: 1;
+          --rotate-bar-one: 0;
+          --rotate-bar-three: 0;
+          width: 25px;
+          transform: scale(0.8);
+          display: flex;
+          flex-direction: column;
+          gap: var(--gap);
+          cursor: pointer;
+          position: relative;
+          .bar {
+            position: relative;
+            height: var(--height-bar);
+            width: 100%;
+            border-radius: .5rem;
+            background-color: black;
+          }
+          
+          .bar--1 {
+            top: var(--pos-y-bar-one);
+            transform: rotate(var(--rotate-bar-one));
+            transition: top 200ms 100ms, transform 100ms;
+          }
+          
+          .bar--2 {
+            transform: scaleX(var(--scale-bar));
+            transition: transform 150ms 100ms;
+          }
+          
+          .bar--3 {
+            bottom: var(--pos-y-bar-three);
+            transform: rotate(var(--rotate-bar-three));
+            transition: bottom 200ms 100ms, transform 100ms;
+          }
+          
+          &.active > .bar--1 {
+            transition: top 200ms, transform 200ms 100ms;
+          }
+          
+          &.active > .bar--3 {
+            transition: bottom 200ms, transform 200ms 100ms;
+          }
+          
+          &.active {
+            --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+            --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+            --scale-bar: 0;
+            --rotate-bar-one: 45deg;
+            --rotate-bar-three: -45deg;
+          }
+      }
+        
+        nav.mobile {
+          display: none;
+
+          @media (max-width: 576px){
+            display: flex;
+          }
         }
     }
 }
@@ -44,7 +119,7 @@ header {
     border-radius: 30px;
     @media (max-width: 576px){
       padding: 10px !important;
-      border-radius: 0px !important;
+      border-radius: 20px !important;
     }
     .info {
         display: flex;
@@ -226,20 +301,33 @@ header {
         align-items: flex-end;
         gap: 24px;
         align-self: stretch;
+        @media (max-width: 1024px){
+            flex-wrap: wrap;
+        }
         .card {
-            width: 100%;
+            width: 45%;
             max-width: 330px;
             height: 364px;
             border-radius: 20px;
             background: linear-gradient(39deg, rgba(255, 255, 255, 0.00) 52.45%, rgba(0, 105, 255, 0.20) 94.48%), #FFF;
             padding: 34px 25px;
+            @media (max-width: 576px){
+              padding: 25px 20px;
+              height: 270px;
+            }
             img {
                 width: 60px;
+                @media (max-width: 576px){
+                    width: 44px;
+                }
             }
             p {
                 font-size: 18px;
                 color: #BAAFAF;
                 font-weight: 400;
+                @media (max-width: 576px){
+                    font-size: 16px;
+                }
             }
         } 
     }
@@ -253,10 +341,24 @@ header {
     color: #0069FF;
     font-size: 20px;
     font-weight: 500;
+    @media (max-width: 1024px){
+      padding: 34px;
+    }
 }
 
 .imgInfo {
   align-items: stretch !important;
+  @media (max-width: 768px){
+    flex-direction: column;
+    gap: 34px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
   .info {
     display: flex;
     max-width: 802px;
@@ -308,6 +410,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
+  @media (max-width: 576px){
+      flex-direction: column;
+      gap: 20px;
+      padding: 22px;
+  }
   h2 {
     color: white;
     width: 100%;
@@ -324,9 +431,19 @@ header {
     color: white;
     width: 100%;
     max-width: 541px;
+    @media (max-width: 1024px){
+      font-size: 30px;
+    }
+    @media (max-width: 576px){
+        font-size: 28px;
+    }
   }
   button.thirdBtn {
     padding: 17px 70px;
+    @media (max-width: 576px){
+        padding: 15px 35px;
+    }
+
   }
 }
 
@@ -342,6 +459,9 @@ header {
   }
   button.thirdBtn {
     padding: 17px 70px;
+    @media (max-width: 576px){
+        padding: 15px 35px;
+    }
   }
 }
 
@@ -351,6 +471,10 @@ footer {
   border-radius: 40px 40px 0px 0px;
   border: 3px solid #CEE4FF;
   padding: 137px 172px 154.747px 161px;
+  @media (max-width: 1000px){
+    padding: 140px 25px 30px;
+  }
+
   .footerIsland {
     border-radius: 20px;
     border: 3px solid #CEE4FF;
@@ -364,30 +488,72 @@ footer {
     display: flex;
     align-items: center;
     gap: 70px;
+    @media (max-width: 1000px){
+      padding: 20px 25px;
+      width: 80%;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    @media (max-width: 576px){
+      width: 100%;
+      top: -90px;
+      gap: 20px;
+      padding: 10px 15px;
+    }
     a {
       color: black;
+      @media (max-width: 576px){
+        width: 40%;
+      }
     }
     .linkCtr {
       display: flex;
       align-items: center;
       gap: 22px;
-
+      @media (max-width: 576px){
+          gap: 10px;
+          img {
+            width: 20px;
+          }
+          .text  {
+            :nth-child(1) {
+              font-size: 18px;
+            }
+            :nth-child(2) {
+              font-size: 14px;
+            }
+          }
+      }
     }
   }
   .footerIns {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 576px){
+      flex-direction: column;
+      gap: 30px;
+    }
     .info {
+      @media (max-width: 576px){
+        align-items: center;
+      }
       p {
         font-size: 18px;
         font-weight: 400;
+        @media (max-width: 576px){
+          text-align: center;
+          font-size: 16px;
+        }
       }
     }
     .links {
       display: flex;
       align-items: flex-start;
       gap: 80px;
+      @media (max-width: 576px){
+          gap: 20px;
+      }
       .linksCtr {
         display: flex;
         flex-direction: column;
@@ -413,6 +579,29 @@ footer {
           }
         }
       }
+    }
+  }
+}
+.bannersMainPage {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feedbacks {
+  flex-wrap: wrap;
+  @media (max-width: 576px){
+      gap: 20px;
+  }
+  .feedbackCard  {
+    @media (max-width: 576px){
+      height: 270px;
+      .imgCtr, 
+      .info {
+        padding-inline: 20px;
+      }
+        img.back {
+          display: none;
+        }
     }
   }
 }

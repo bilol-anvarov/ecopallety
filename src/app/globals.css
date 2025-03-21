@@ -46,6 +46,12 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media (max-width: 576px) {
+  .defBtn {
+    padding: 13px 28px;
+    font-size: 15px;
+  }
+}
 
 .secondaryBtn {
   padding: 15px 32px;
@@ -65,6 +71,12 @@ body {
 .secondaryBtn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+@media (max-width: 576px) {
+  .secondaryBtn {
+    padding: 13px 28px;
+    font-size: 15px;
+  }
 }
 
 .thirdBtn {
@@ -88,6 +100,12 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media (max-width: 576px) {
+  .thirdBtn {
+    padding: 13px 28px;
+    font-size: 15px;
+  }
+}
 
 h2 {
   color: #000;
@@ -96,14 +114,44 @@ h2 {
   font-weight: 600;
   line-height: 150%; /* 48px */
 }
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+}
 
 h4 {
   font-size: 24px;
   font-weight: 600;
   color: #000;
 }
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  h4 {
+    font-size: 20px;
+  }
+}
 
 h5 {
   font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  h5 {
+    font-size: 18px;
+  }
 }
