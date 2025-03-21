@@ -96,15 +96,34 @@ header {
           }
       }
         
-        nav.mobile {
-          display: none;
-
-          @media (max-width: 576px){
-            display: flex;
-          }
-        }
     }
-}
+  }
+  .burgerMobile {
+    display: none;
+    @media (max-width: 576px){
+      display: block;
+    }
+  }
+  .navMobileCtr {
+    display: none;
+    background-color: #F8F8F8;
+    z-index: 30;
+    padding-top: 150px;
+    &.active {
+      display: block;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+      a {
+        color: #646464;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
 
 .sliderSection {
     margin-top: 140px;
