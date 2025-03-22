@@ -18,6 +18,11 @@ header .header_ins {
           align-items: center;
   padding: 15px 17px 14.747px 34px;
 }
+@media (max-width: 576px) {
+  header .header_ins {
+    padding: 15px 34px;
+  }
+}
 header .header_ins .logoCtr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,17 +237,6 @@ header .header_ins .iconMenu.active {
 .sliderSection .info h1 {
   font-size: 42px;
   margin-bottom: 40px;
-}
-.sliderSection .info .sliderBtn {
-  padding: 15px 32px;
-  border-radius: var(--Spacing-xl, 40px);
-  background: var(--Base-Base-White, #FFF);
-  color: var(--Primary-Primary, #009FF5);
-  font-size: 16px;
-  font-weight: 500;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .sliderSection .bgImages {
   position: absolute;
@@ -803,11 +797,12 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
 }
 
 .bannersMainPage {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .feedbacks {
@@ -829,5 +824,39 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
   }
   .feedbacks .feedbackCard img.back {
     display: none;
+  }
+}
+
+.banner {
+  width: 100%;
+  border-radius: 40px;
+  background: #E3E2E2;
+  height: 362px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 148px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner h1 {
+  color: white;
+}
+@media (max-width: 576px) {
+  .banner {
+    gap: 20px;
   }
 }

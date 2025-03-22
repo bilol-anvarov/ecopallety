@@ -34,7 +34,7 @@ export default function Header() {
           <nav>
             <ul className="links desktop flex lg:gap-[74px] gap-[30px]">
               <li>
-                <Link href="/">Паллеты</Link>
+                <Link href="/pallets">Паллеты</Link>
               </li>
               <li>
                 <Link href="/">Деревянные ящики</Link>
@@ -78,8 +78,8 @@ export default function Header() {
               <div className="navInside w-full">
                 <ul className="links desktop flex lg:gap-[74px] gap-[30px]">
                   <li>
-                    <Link href="/">Паллеты</Link>
-                  </li>
+                    <Link href="/pallets">Паллеты</Link>
+                  </li> 
                   <li>
                     <Link href="/">Деревянные ящики</Link>
                   </li>

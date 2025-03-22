@@ -9,6 +9,9 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 15px 17px 14.747px 34px;
+        @media (max-width: 576px){
+          padding: 15px 34px;
+        }
         .logoCtr {
             display: flex;
             align-items: center;
@@ -165,15 +168,7 @@ header {
             font-size: 42px;
             margin-bottom: 40px;
         }
-        .sliderBtn {
-          padding: 15px 32px;
-          border-radius: var(--Spacing-xl, 40px);
-          background: var(--Base-Base-White, #FFF);
-          color: var(--Primary-Primary, #009FF5);
-          font-size: 16px;
-          font-weight: 500;
-          width: fit-content;
-        }
+
     }
     .bgImages {
         position: absolute;
@@ -602,8 +597,9 @@ footer {
   }
 }
 .bannersMainPage {
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .feedbacks {
@@ -622,5 +618,28 @@ footer {
           display: none;
         }
     }
+  }
+}
+
+.banner {
+  width: 100%;
+  border-radius: 40px;
+  background: #E3E2E2;  
+  height: 362px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 148px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  h1 {
+    color: white;
+  }
+  @media (max-width: 576px){
+    gap: 20px;
   }
 }

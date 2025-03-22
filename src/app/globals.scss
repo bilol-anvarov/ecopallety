@@ -89,7 +89,33 @@ body {
     }
 } 
 
+.sliderBtn {
+    border-radius: var(--Spacing-xl, 40px);
+    padding: 15px 52px;
+    background: var(--Base-Base-White, #FFF);
+    color: var(--Primary-Primary, #009FF5);
+    font-size: 16px;
+    font-weight: 500;
+    width: fit-content;
+    @media (max-width: 576px){
+        padding: 15px 32px;
+    }
+}
 
+
+h1 {
+    // color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+    @media (max-width: 1024px){
+        font-size: 38px;
+    }
+    @media (max-width: 576px){
+        font-size: 32px;
+    }
+}
 h2 {
     color: #000;
     font-size: 32px;
@@ -117,6 +143,7 @@ h4 {
 }
 h5 {
     font-size: 20px;
+    line-height: 150%; /* 27px */
     font-weight: 600;
     @media (max-width: 1024px){
         font-size: 18px;
