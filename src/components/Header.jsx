@@ -37,7 +37,7 @@ export default function Header() {
                 <Link href="/pallets">Паллеты</Link>
               </li>
               <li>
-                <Link href="/">Деревянные ящики</Link>
+                <Link href="/boxes">Деревянные ящики</Link>
               </li>
               <li>
                 <Link href="/">Производство</Link>
@@ -81,7 +81,7 @@ export default function Header() {
                     <Link href="/pallets">Паллеты</Link>
                   </li> 
                   <li>
-                    <Link href="/">Деревянные ящики</Link>
+                    <Link href="/boxes">Деревянные ящики</Link>
                   </li>
                   <li>
                     <Link href="/">Производство</Link>
