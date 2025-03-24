@@ -709,3 +709,12 @@ footer {
     gap: 20px;
   }
 }
+
+@media (max-width: 576px){
+  .boxCtr  {
+    flex-direction: column;
+    .info  {
+      flex-direction: column;
+    }
+  }
+}

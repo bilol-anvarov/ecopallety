@@ -940,3 +940,18 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
     gap: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .boxCtr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxCtr .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
