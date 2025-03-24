@@ -419,6 +419,72 @@ header {
   }
 }
 
+.acceptingCtr2 {
+  background-image: url('/image 65.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  .text {
+    line-height: 150%;
+  }
+  h4 {
+    line-height: 150%;
+    color: white;
+  }
+  p {
+    line-height: 150%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+  ul {
+    line-height: 150%;
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    li {
+      list-style: inside;
+    }
+  }
+}
+
+.acceptingCtr3 {
+  background-image: url('/image 66.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  .text {
+    line-height: 150%;
+  }
+  h4 {
+    line-height: 150%;
+    color: white;
+  }
+  p {
+    line-height: 150%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+  ul {
+    line-height: 150%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
 .consultBanner {
   background-image: url('/Rectangle.png');
   background-repeat: no-repeat;
