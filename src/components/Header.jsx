@@ -40,7 +40,7 @@ export default function Header() {
                 <Link href="/boxes">Деревянные ящики</Link>
               </li>
               <li>
-                <Link href="/">Производство</Link>
+                <Link href="/production">Производство</Link>
               </li>
               <li>
                 <Link href="/">О нас</Link>
@@ -84,7 +84,7 @@ export default function Header() {
                     <Link href="/boxes">Деревянные ящики</Link>
                   </li>
                   <li>
-                    <Link href="/">Производство</Link>
+                    <Link href="/production">Производство</Link>
                   </li>
                   <li>
                     <Link href="/">О нас</Link>

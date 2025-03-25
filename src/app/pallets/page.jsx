@@ -6,6 +6,12 @@ import ConsultationBanner from '@/components/ConsultationBanner'
 import Requests from '@/components/Requests'
 import React from 'react'
 
+
+export const metadata = {
+  title: "Виды продаваемых поддонов / паллет"
+};
+
+
 export default function Page() {
   return (
     <div className='PalletsMain defCtr'>

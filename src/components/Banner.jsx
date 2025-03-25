@@ -5,7 +5,7 @@ export default function Banner({imgSrc, title}) {
     <div className='banner defCtr' style={{backgroundImage: `url("${imgSrc}")`}}>
         <h1>{title}</h1>
         <a href="#!">
-            <div className="sliderBtn">Перейти</div>
+            <div className="sliderBtn">Заказать</div>
         </a>
     </div>
   )

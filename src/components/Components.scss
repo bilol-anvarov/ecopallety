@@ -389,6 +389,12 @@ header {
       line-height: 150%; /* 27px */
       font-weight: 500;
     }
+    ul {
+      list-style: inside;
+      li {
+        list-style: inside;
+      }
+    }
   }
 }
 
