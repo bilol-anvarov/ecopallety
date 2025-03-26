@@ -1,10 +1,15 @@
 import Banner from "@/components/Banner";
 import React from "react";
 
+
+export const metadata = {
+  title: "О компаемм ECO PALLETY.KZ"
+};
+
 export default function Page() {
   return (
     <div className="aboutUsPage defCtr">
-      <Banner title={"О компаемм PALLTY.KZ"} imgSrc={"/image 80.png"} />
+      <Banner title={"О компаемм ECO PALLETY.KZ"} imgSrc={"/image 80.png"} />
       <div className="aboutUsCtr1">
         <h4>Философия компании</h4>
         <div className="info">

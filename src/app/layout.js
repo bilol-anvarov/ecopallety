@@ -25,7 +25,6 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ваш_аккаунт", // если есть Twitter-аккаунт
     title: "ECO Pallety KZ – палеты и ящики оптом",
     description: "Продажа надёжных палетов и деревянных ящиков в Казахстане. Высокое качество, доступные цены и доставка по всей стране.",
     images: ["https://ecopallety.vercel.app/preview.png"],
