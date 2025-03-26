@@ -378,21 +378,28 @@ header {
     max-width: 802px;
     width: 100%;
     padding: 18.5px 25px 17.5px 25px;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
     gap: 40px;
     border-radius: 20px;
     background: #FFF;
-    p {
-      font-size: 18px;
-      color: #666;
-      line-height: 150%; /* 27px */
-      font-weight: 500;
-    }
-    ul {
-      list-style: inside;
-      li {
+    .text {
+      
+      p {
+        font-size: 18px;
+        color: #666;
+        line-height: 150%; /* 27px */
+        font-weight: 500;
+      }
+      ul {
         list-style: inside;
+        line-height: 150%; /* 27px */
+        color: #666;
+        li {
+          color: #666;
+          line-height: 150%; /* 27px */
+          list-style: inside;
+        }
       }
     }
   }

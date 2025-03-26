@@ -44,7 +44,7 @@ export default function Page() {
       </div>
 
       <div
-        className={`imgInfo flex defCtr justify-between mt-[60px] flex-row-reverse`}
+        className={`imgInfo flex defCtr justify-between mt-[60px] flex-row-reverse items-center`}
       >
         <img
           className="w-full rounded-[12px] max-w-[565px]"
@@ -53,11 +53,13 @@ export default function Page() {
         />
         <div className="info">
           <h4>Высокое качесвто поддонов/паллетов</h4>
-          <p>
-            Деревянные поддоны, паллеты, ящики – наиболее экологичный, удобный и
-            экономичный из всех видов поддонов. Они прекрасно подходят для
-            транспортировки и разгрузочно-погрузочных работ на любых
-            предприятиях.
+          <div className="text">
+            <p>
+              Деревянные поддоны, паллеты, ящики – наиболее экологичный, удобный
+              и экономичный из всех видов поддонов. Они прекрасно подходят для
+              транспортировки и разгрузочно-погрузочных работ на любых
+              предприятиях.
+            </p>
             <br />
             <br />
             <strong className="text-[#000]">На нашем предприятии:</strong>
@@ -77,7 +79,7 @@ export default function Page() {
                 результатов, на которые можно положиться в любое время.
               </li>
             </ul>
-          </p>
+          </div>
           <Link href={"#!"}>
             <button type="button" className="secondaryBtn">
               Заказать
