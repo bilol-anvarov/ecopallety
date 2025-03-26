@@ -46,7 +46,7 @@ export default function Header() {
                 <Link href="/about-us">О нас</Link>
               </li>
               <li>
-                <Link href="/">Контакты</Link>
+                <Link href="/contacts">Контакты</Link>
               </li>
             </ul>
           </nav>
@@ -90,7 +90,7 @@ export default function Header() {
                     <Link href="/about-us">О нас</Link>
                   </li>
                   <li>
-                    <Link href="/">Контакты</Link>
+                    <Link href="/contacts">Контакты</Link>
                   </li>
                 </ul>
               </div>

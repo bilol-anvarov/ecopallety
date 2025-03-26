@@ -1102,3 +1102,48 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
     font-size: 16px;
   }
 }
+
+.contactsPage {
+  margin-top: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 576px) {
+  .contactsPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contactsPage .info {
+  border-radius: 20px;
+  background: #FFF;
+  width: 100%;
+  max-width: 566px;
+  padding: 36px 29px;
+}
+.contactsPage .info p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  font-weight: 500;
+}
+.contactsPage .info a {
+  color: #5371FF;
+  line-height: 150%; /* 24px */
+}
+.contactsPage iframe {
+  width: 100% !important;
+  max-width: 802px;
+  height: 751px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .contactsPage iframe {
+    height: 450px !important;
+  }
+}

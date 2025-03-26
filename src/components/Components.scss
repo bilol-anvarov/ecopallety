@@ -823,3 +823,39 @@ footer {
     }
   }
 }
+
+.contactsPage {
+  margin-top: 148px;
+  display: flex;
+  gap: 24px;
+  @media (max-width: 576px){
+      flex-direction: column;
+  }
+  .info {
+    border-radius: 20px;
+    background: #FFF;
+    width: 100%;
+    max-width: 566px;
+    padding: 36px 29px;
+    p {
+      color: #707070;
+      font-size: 16px;
+      line-height: 150%; /* 24px */
+      font-weight: 500;
+    }
+    a {
+      color: #5371FF;
+      line-height: 150%; /* 24px */
+    }
+  }
+  iframe {
+    width: 100% !important;
+    max-width: 802px;
+    height: 751px;
+    border-radius: 20px;
+    overflow: hidden;
+    @media (max-width: 576px){
+        height: 450px !important;
+    }
+  }
+}
