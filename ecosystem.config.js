@@ -2,7 +2,7 @@ module.exports = {
     apps: [{
       name: "ecopallety",
       script: "npm",
-      args: "start -p 8010",
+      args: "start -p 3030",
       env: {
         NODE_ENV: "production"
       },
