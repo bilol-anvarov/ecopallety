@@ -1,15 +1,18 @@
+'use client'
+import React, { useState } from "react";
 import Banner from "@/components/Banner";
 import BoxesPallets from "@/components/BoxesPallets";
 import Link from "next/link";
-import React from "react";
+import ConsultationModal from "@/components/popup";
 
-export const metadata = {
-  title: "Производство",
-};
+
 
 export default function Page() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
   return (
     <div className="production defCtr">
+      <ConsultationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Banner title={"Производство"} imgSrc={"/image 80.png"} />
       <div className={`imgInfo flex defCtr justify-between mt-[60px]`}>
         <img
@@ -35,11 +38,11 @@ export default function Page() {
             доставки и утилизации. Мы можем предложить наиболее
             конкурентоспособную цену на рынке в Алматы и Казахстане.
           </p>
-          <Link href={"#!"}>
-            <button type="button" className="secondaryBtn">
+          {/* <Link href={"#!"}> */}
+            <button type="button" onClick={() => setIsModalOpen(true)} className="secondaryBtn">
               Заказать
             </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
 
@@ -80,11 +83,11 @@ export default function Page() {
               </li>
             </ul>
           </div>
-          <Link href={"#!"}>
-            <button type="button" className="secondaryBtn">
+            <button type="button" onClick={() => setIsModalOpen(true)} className="secondaryBtn">
               Заказать
             </button>
-          </Link>
+          {/* <Link href={"#!"}> */}
+          {/* </Link> */}
         </div>
       </div>
       <BoxesPallets />

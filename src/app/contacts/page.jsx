@@ -24,18 +24,17 @@ export default function Page() {
         </p>
         <h5 className="mt-[30px] mb-[20px]">Адрес</h5>
         <a href="https://maps.app.goo.gl/43Z1VgD2DqtNPAN99" target="_blank">
-        КАЗАХСТАН, Алматинская обл.,
+        КАЗАХСТАН, Алматинская обл., <br />
         г. Алатау, мкр. Заречный, ул. Абая, уч.
         72
         </a>
         <h5 className="mt-[30px] mb-[20px]">Контактный телефон</h5>
         <div className="links flex flex-col gap-[10px]">
-          <a href="/"></a>
-          <a href="/"></a>
-          <a href="/"></a>
+          <a href="tel:+77082083002" target="_blank">+7 708 208 30 02</a>
+          <a href="tel:+77474918099" target="_blank">+7 747 491 80 99</a>
         </div>
         <h5 className="mt-[30px] mb-[20px]">E-mail</h5>
-        <a href="">info@paletty.kz</a>
+        <a target="_blank" href="mailto:ecopallety@gmail.com">ecopallety@gmail.com</a>
       </div>
       <iframe
 

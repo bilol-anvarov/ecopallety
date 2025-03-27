@@ -876,5 +876,52 @@ footer {
     flex-shrink: 0;
     border-radius: 40px;
     background: #FFF;
+    input, 
+    textarea {
+      padding: 11.26px 10px 9.74px 22px;
+      border-radius: 20px;
+      border: 1px solid #B8B8B8;
+      color: black;
+      font-size: 18px;
+      font-weight: 500;
+      &::placeholder {
+        color: #ABABAB;
+      }
+    }
+    textarea {
+      height: 100px;
+    }
+    .closeBtn {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 30px;
+      transform: scale(1.6);
+      cursor: pointer;
+    }
+    form {
+
+      button {
+        color: #FFF;
+        display: flex;
+        padding: 10px 52px 11px 52px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 111px;
+        cursor: pointer;
+        background: #0069FF;
+        font-size: 14px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    }
   }
 }

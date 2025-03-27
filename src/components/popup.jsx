@@ -12,11 +12,17 @@ export default function ConsultationModal({ isOpen, onClose }) {
   });
 
   const sendMessageToTelegram = async () => {
-    const botToken = '7560455824:AAHbzcnVTGbpZvKIW8WvZBJdicYfD620zZk';
+    const botToken = '7898920024:AAEI7aj0mn7LPaB156jl7rGOkGZbdroFJU8';
     const chatId = '2425797';
+    const chatIds = ['2425797']    
     const text = `Новая заявка!%0AИмя: ${formData.name}%0AТелефон: ${formData.phone}%0AEmail: ${formData.email}%0AСообщение: ${formData.message}`;
-    
-    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`);
+
+    // Отправляем сообщения всем chat_id
+    await Promise.all(
+        chatIds.map(chatId => 
+        fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`)
+        )
+    );
     onClose();
   };
 
@@ -36,14 +42,14 @@ export default function ConsultationModal({ isOpen, onClose }) {
           transition={{ duration: 0.3 }}
           className="popupIns"
         >
-            <div className="flex justify-between items-center mb-[40px]">
+            <div className="flex justify-between items-center mb-[30px]">
                 <h3 className="text-xl font-bold mb-4">Консультация</h3>
                 <button className="closeBtn" onClick={onClose}>×</button>
 
             </div>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-[14px]">
             <input type="text" placeholder="Имя" required className="border p-2 rounded" onChange={(e) => setFormData({...formData, name: e.target.value})} />
-            <input type="tel" placeholder="Ваш телефон" required className="border p-2 rounded" onChange={(e) => setFormData({...formData, phone: e.target.value})} />
+            <input type="number" placeholder="Ваш телефон" required className="border p-2 rounded" onChange={(e) => setFormData({...formData, phone: e.target.value})} />
             <input type="email" placeholder="Ваша почта" required className="border p-2 rounded" onChange={(e) => setFormData({...formData, email: e.target.value})} />
             <textarea placeholder="Сообщение" required className="border p-2 rounded" onChange={(e) => setFormData({...formData, message: e.target.value})}></textarea>
             <button type="submit" className="bg-blue-600 text-white p-2 rounded">Отправить</button>

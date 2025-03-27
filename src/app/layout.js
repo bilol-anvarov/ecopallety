@@ -11,11 +11,11 @@ export const metadata = {
   openGraph: {
     title: "ECO Pallety KZ – палеты и ящики оптом",
     description: "Продажа надёжных палетов и деревянных ящиков в Казахстане. Высокое качество, доступные цены и доставка по всей стране.",
-    url: "https://ecopallety.vercel.app/", // замените на ваш домен
+    url: "http://ecopallety.kz/", // замените на ваш домен
     siteName: "ECO Pallety KZ",
     images: [
       {
-        url: "https://ecopallety.vercel.app/preview.png", // добавьте изображение для превью
+        url: "http://ecopallety.kz/preview.png", // добавьте изображение для превью
         width: 1200,
         height: 630,
         alt: "Палеты и деревянные ящики",
@@ -27,13 +27,16 @@ export const metadata = {
     card: "summary_large_image",
     title: "ECO Pallety KZ – палеты и ящики оптом",
     description: "Продажа надёжных палетов и деревянных ящиков в Казахстане. Высокое качество, доступные цены и доставка по всей стране.",
-    images: ["https://ecopallety.vercel.app/preview.png"],
+    images: ["http://ecopallety.kz/preview.png"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+      <head>
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </head>
       <body
         className={`antialiased`}
       >

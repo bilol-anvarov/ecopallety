@@ -1172,3 +1172,68 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
   border-radius: 40px;
   background: #FFF;
 }
+.popup .popupIns input,
+.popup .popupIns textarea {
+  padding: 11.26px 10px 9.74px 22px;
+  border-radius: 20px;
+  border: 1px solid #B8B8B8;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.popup .popupIns input::-webkit-input-placeholder, .popup .popupIns textarea::-webkit-input-placeholder {
+  color: #ABABAB;
+}
+.popup .popupIns input::-moz-placeholder, .popup .popupIns textarea::-moz-placeholder {
+  color: #ABABAB;
+}
+.popup .popupIns input:-ms-input-placeholder, .popup .popupIns textarea:-ms-input-placeholder {
+  color: #ABABAB;
+}
+.popup .popupIns input::-ms-input-placeholder, .popup .popupIns textarea::-ms-input-placeholder {
+  color: #ABABAB;
+}
+.popup .popupIns input::placeholder,
+.popup .popupIns textarea::placeholder {
+  color: #ABABAB;
+}
+.popup .popupIns textarea {
+  height: 100px;
+}
+.popup .popupIns .closeBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  cursor: pointer;
+}
+.popup .popupIns form {
+  /* Firefox */
+}
+.popup .popupIns form button {
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 52px 11px 52px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 111px;
+  cursor: pointer;
+  background: #0069FF;
+  font-size: 14px;
+}
+.popup .popupIns form input::-webkit-outer-spin-button,
+.popup .popupIns form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.popup .popupIns form input[type=number] {
+  -moz-appearance: textfield;
+}

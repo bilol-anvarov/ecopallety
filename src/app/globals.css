@@ -19,6 +19,11 @@ body {
   border: none;
   font-family: "Inter", sans-serif;
   outline: none;
+  scroll-margin-block-start: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .defCtr {
