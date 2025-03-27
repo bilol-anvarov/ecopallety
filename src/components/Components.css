@@ -32,8 +32,10 @@ header .header_ins .logoCtr {
           align-items: center;
   gap: 20px;
 }
-header .header_ins .logoCtr :nth-child(2) {
-  display: none;
+@media (max-width: 576px) {
+  header .header_ins .logoCtr :nth-child(2) {
+    display: none;
+  }
 }
 header .header_ins .links {
   display: -webkit-box;
@@ -237,6 +239,11 @@ header .header_ins .iconMenu.active {
 .sliderSection .info h1 {
   font-size: 42px;
   margin-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .sliderSection .info h1 {
+    font-size: 32px !important;
+  }
 }
 .sliderSection .bgImages {
   position: absolute;
@@ -1146,4 +1153,22 @@ footer .footerIns .links .linksCtr .linksIns a:hover {
   .contactsPage iframe {
     height: 450px !important;
   }
+}
+
+.popup {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 2000;
+}
+.popup .popupIns {
+  width: 100%;
+  padding: 38px;
+  max-width: 753px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 40px;
+  background: #FFF;
 }

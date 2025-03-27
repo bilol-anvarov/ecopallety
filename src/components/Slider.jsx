@@ -17,16 +17,16 @@ const slides = [
   {
     id: 2,
     title:
-      "Специализируемся на производстве деревянных поддонов, ящиков, их продаже, покупке и ремонте",
-    bgImg: "/banner.png",
-    link: "#!",
+      "Деревянные ящики",
+    bgImg: "/image 43.png",
+    link: "/boxes",
   },
   {
     id: 3,
     title:
-      "Специализируемся на производстве деревянных поддонов, ящиков, их продаже, покупке и ремонте",
-    bgImg: "/banner.png",
-    link: "#!",
+      "Виды продаваемых поддонов / паллет",
+    bgImg: "/image 17.png",
+    link: "/pallets", 
   }
 ];
 
@@ -82,16 +82,16 @@ export default function SliderCtr() {
                 index === currentSlide && (
                   <motion.div
                     key={slide.id}
-                    className="slide"
+                    className="slide w-full"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <div className="infoCtr">
+                    <div className="infoCtr flex justify-between w-full">
                         <div className="texts">
                             <h1>{slide.title}</h1>
-                            <a href="#!">
+                            <a href={slide.link}>
                                 <div className="sliderBtn">Перейти</div>
                             </a>
                         </div>

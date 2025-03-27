@@ -1,15 +1,21 @@
+'use client'
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import ConsultationModal from "./popup";
 
 export default function ConsultationBanner() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="consultBanner w-full p-[44px] mt-[60px] flex items-center justify-between">
       <h2>Получить профессиональную консультацию прямо сейчас</h2>
-      <Link href={"#!"}>
-        <button type="button" className="thirdBtn">
+      {/* <Link > */}
+        <button type="button"  onClick={() => setIsModalOpen(true)} className="thirdBtn">
           Консультация
         </button>
-      </Link>
+      {/* </Link> */}
+      <ConsultationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
     </div>
   );
 }
