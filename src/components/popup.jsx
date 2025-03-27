@@ -13,8 +13,8 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
   const sendMessageToTelegram = async () => {
     const botToken = '7898920024:AAEI7aj0mn7LPaB156jl7rGOkGZbdroFJU8';
-    const chatId = '2425797';
-    const chatIds = ['2425797']    
+    // const chatId = '2425797';
+    const chatIds = ['2425797', '841893366']    
     const text = `Новая заявка!%0AИмя: ${formData.name}%0AТелефон: ${formData.phone}%0AEmail: ${formData.email}%0AСообщение: ${formData.message}`;
 
     // Отправляем сообщения всем chat_id
