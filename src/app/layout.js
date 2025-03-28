@@ -36,6 +36,12 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <head>
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+        <meta
+          name="google-site-verification"
+          content="M-b8RX8CGdlLEkicA1YdQ8dA8prg9i_lF9zDM7bwmvY"
+        />
+        <meta name="yandex-verification" content="c84465c9eadd6b44" />
+
       </head>
       <body
         className={`antialiased`}
