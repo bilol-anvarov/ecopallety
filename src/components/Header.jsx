@@ -27,7 +27,7 @@ export default function Header() {
         <div className="header_ins defCtr">
           <Link href={"/"}>
             <div className="logoCtr">
-              <img src="/logo.svg" alt="logo" />
+              <img src="/logo.svg" className="w-[90px]" alt="logo" />
               <img src="/logoName.svg" alt="logo" />
             </div>
           </Link>
