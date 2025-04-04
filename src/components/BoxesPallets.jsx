@@ -33,7 +33,6 @@ export default function BoxesPallets() {
           <div className="ctr flex flex-col gap-[19px] w-full max-w-[720px]">
             <IconText text={"Европаллеты"} />
             <IconText text={"Финские паллеты"} />
-            <IconText text={"Финские паллеты"} />
             <IconText text={"Прием б/у паллет"} />
             <IconText text={"Аренда поддонов"} />
             <IconText text={"Выкуп поддонов"} />
@@ -57,7 +56,7 @@ export default function BoxesPallets() {
         <div className="ins flex gap-[19px] justify-between items-center max-[576px]:flex-col">
           <div className="ctr flex flex-col gap-[19px] w-full max-w-[720px]">
             <IconText text={"Для овощей и фруктов"} />
-            <IconText text={"Для овощехранилщ и паллтеные борта"} />
+            <IconText text={"Для овощехранилищ и паллетные борта"} />
             <IconText text={"Для перевозки грузов"} />
             <IconText text={"Фанерные ящики"} />
             <IconText text={"Вагонные ящики"} />
@@ -68,8 +67,8 @@ export default function BoxesPallets() {
               <IconText text={"Деревянные ящики"} />
               <IconText text={"Ящики Астана"} />
               <IconText text={"Ящики Шымкент"} />
-              <IconText text={"С видвижной крышкой"} />
-              <IconText text={"Корневые ящики"} />
+              <IconText text={"С выдвижной крышкой"} />
+              <IconText text={"Керновые ящики"} />
           </div>
         </div>
       </div>
