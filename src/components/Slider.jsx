@@ -95,12 +95,12 @@ export default function SliderCtr() {
                             <a href={slide.link}>
                                 <div className="sliderBtn">Перейти</div>
                             </a>
-                            <div className="flex items-center gap-3 mt-[30px]">
+                            <div className="flex certificates items-center gap-3 mt-[30px]">
                               <img className="max-w-[150px]" src="/made_in_kz_-_.png" alt="img" />
                               <img className="max-w-[150px]" src="/samruk_kazyna_-.png" alt="img" />
                             </div>
                         </div>
-                        <img className="w-full max-w-[285px]" src="/image 18.png" alt=".." />
+                        <img className="w-full max-w-[285px] mainIMG" src="/image 18.png" alt=".." />
                     </div>
                   </motion.div>
                 )

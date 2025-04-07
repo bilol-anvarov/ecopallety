@@ -238,8 +238,14 @@ header .header_ins .iconMenu.active {
 }
 @media (max-width: 576px) {
   .sliderSection .info h1 {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
+}
+.sliderSection .info .certificates img {
+  max-width: 100px;
+}
+.sliderSection .info .mainIMG {
+  max-width: 200px;
 }
 .sliderSection .bgImages {
   position: absolute;

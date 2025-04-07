@@ -166,8 +166,16 @@ header {
             font-size: 42px;
             margin-bottom: 40px;
             @media (max-width: 576px){
-                font-size: 32px !important;
+                font-size: 28px !important;
             }
+        }
+        .certificates {
+          img {
+            max-width: 100px;
+          }
+        }
+        .mainIMG {
+          max-width: 200px;
         }
 
     }
