@@ -1,21 +1,31 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import ConsultationModal from "./popup";
 
 export default function Banner({ imgSrc, title }) {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div
       className="banner defCtr"
-      style={{ backgroundImage: `url("${imgSrc}")` }}
+      style={{
+        backgroundImage: `url("${imgSrc}")`,
+        backgroundPosition: "bottom center",
+      }}
     >
       <h1>{title}</h1>
       {/* <a href="#!"> */}
-      <div className="sliderBtn cursor-pointer" onClick={() => setIsModalOpen(true)}>Заказать</div>
+      <div
+        className="sliderBtn cursor-pointer"
+        onClick={() => setIsModalOpen(true)}
+      >
+        Заказать
+      </div>
       {/* </a> */}
-      <ConsultationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      
+      <ConsultationModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }

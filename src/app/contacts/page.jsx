@@ -14,13 +14,13 @@ export default function Page() {
           ТОО “Казахстанский завод ТНП”
           <br />
           <br />
-          БИН: 130440012915
+          БИН: 190340022365
+        </p>
+        <p>
+          Банк:АО «Банк ЦентрКредит»
         </p>
         <p>
           Номер счета KZT: KZ028562203143525407
-          <br />
-          <br />
-          БИК KCJBKZKX
         </p>
         <h5 className="mt-[30px] mb-[20px]">Адрес</h5>
         <a href="https://maps.app.goo.gl/43Z1VgD2DqtNPAN99" target="_blank">

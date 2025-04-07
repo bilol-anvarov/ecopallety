@@ -10,25 +10,26 @@ const slides = [
   {
     id: 1,
     title:
-      "Специализируемся на производстве деревянных поддонов, ящиков, их продаже, покупке и ремонте",
+      "Мы специализируемся на производстве, продаже, ремонте и выкупе деревянных поддонов и ящиков",
     bgImg: "/banner.png",
     link: "/production",
   },
   {
     id: 2,
     title:
-      "Деревянные ящики",
+      "Деревянные ящики для хранения и транспортировки",
     bgImg: "/image 43.png",
     link: "/boxes",
   },
   {
     id: 3,
     title:
-      "Виды продаваемых поддонов / паллет",
+      "Ассортимент поддонов / паллет, доступных для покупки",
     bgImg: "/image 17.png",
-    link: "/pallets", 
+    link: "/pallets",
   }
 ];
+
 
 const slideDuration = 7000; // 5 секунд для каждого слайда
 
@@ -94,8 +95,12 @@ export default function SliderCtr() {
                             <a href={slide.link}>
                                 <div className="sliderBtn">Перейти</div>
                             </a>
+                            <div className="flex items-center gap-3 mt-[30px]">
+                              <img className="max-w-[150px]" src="/made_in_kz_-_.png" alt="img" />
+                              <img className="max-w-[150px]" src="/samruk_kazyna_-.png" alt="img" />
+                            </div>
                         </div>
-                        <img src="/image 18.png" alt=".." />
+                        <img className="w-full max-w-[285px]" src="/image 18.png" alt=".." />
                     </div>
                   </motion.div>
                 )

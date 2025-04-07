@@ -66,7 +66,19 @@ export default function RootLayout({ children }) {
 
 
 
-
+        <script
+          src="https://umnico.com/assets/widget-loader.js"
+          type="text/javascript"
+          charset="UTF-8"
+          async
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.umnicoWidgetHash = 'a51f4b84cc6dd2120d773b9778b58422';
+            `,
+          }}
+        />
 
 
 

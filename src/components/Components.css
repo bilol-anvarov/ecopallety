@@ -232,10 +232,6 @@ header .header_ins .iconMenu.active {
             flex-direction: column;
   }
 }
-.sliderSection .info .infoCtr img {
-  width: 100%;
-  max-width: 285px;
-}
 .sliderSection .info h1 {
   font-size: 42px;
   margin-bottom: 40px;
