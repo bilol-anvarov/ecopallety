@@ -34,7 +34,7 @@ header .header_ins .logoCtr {
 }
 @media (max-width: 576px) {
   header .header_ins .logoCtr :nth-child(2) {
-    display: none;
+    max-width: 150px;
   }
 }
 header .header_ins .links {
@@ -259,10 +259,20 @@ header .header_ins .iconMenu.active {
 }
 .sliderSection .bgImages .bgImage {
   position: absolute;
+  -o-object-position: left center;
+     object-position: left center;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.sliderSection .bgImages .bgImage.img-2 {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+.sliderSection .bgImages .bgImage.img-1 {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .cursSlide .slide {

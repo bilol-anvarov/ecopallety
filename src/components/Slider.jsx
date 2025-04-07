@@ -25,7 +25,7 @@ const slides = [
     id: 3,
     title:
       "Ассортимент поддонов / паллет, доступных для покупки",
-    bgImg: "/image 17.png",
+    bgImg: "https://p1.zoon.ru/f/a/554a5eac40c088ed4d8c5ddf_60be7b4b1988b.jpg",
     link: "/pallets",
   }
 ];
@@ -67,7 +67,7 @@ export default function SliderCtr() {
                   >
                     <img
                       src={slide.bgImg}
-                      className="bgImage"
+                      className={`bgImage img-${index}`}
                       alt={slide.bgImg}
                     />
                   </motion.div>
