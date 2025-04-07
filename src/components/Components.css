@@ -173,6 +173,10 @@ header .header_ins .iconMenu.active {
   font-size: 20px;
   font-weight: 500;
 }
+.navMobileCtr .links a.small {
+  font-size: 16px;
+  color: #5371ff;
+}
 
 .sliderSection {
   margin-top: 140px;

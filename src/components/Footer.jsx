@@ -52,7 +52,7 @@ export default function Footer() {
           </p>
           <div className="socials">
             <Link href={"#!"}>
-              <img src="/color.png" alt="img" />
+              <img src="/color.svg" alt="img" />
             </Link>
             <Link href={"#!"}>
               <img src="/Instagram.svg" alt="img" />

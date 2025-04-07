@@ -11,7 +11,7 @@ export default function Page() {
         <h4 className="mb-[30px]">Контакты </h4>
         <h5>Банковские реквизиты</h5>
         <p className="my-[20px]">
-          ТОО “Казахстанский завод ТНП”
+          ТОО “Eco Pallety Kz”
           <br />
           <br />
           БИН: 190340022365

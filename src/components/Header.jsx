@@ -92,6 +92,27 @@ export default function Header() {
                   <li>
                     <Link href="/contacts">Контакты</Link>
                   </li>
+                  <li className="mt-[20px] w-[80%]">
+                    <Link target="_blank" className="small" href="https://maps.app.goo.gl/43Z1VgD2DqtNPAN99">
+                    КАЗАХСТАН, Алматинская обл.,
+                    г. Алатау, мкр. Заречный, ул. Абая, уч. 72
+                    </Link>
+                  </li>
+                  <li className="mt-[20px] w-[80%]">
+                    <Link target="_blank" className="small" href="tel:+77082083002">
+                    +7 708 208 30 02
+                    </Link>
+                  </li>
+                  <li className="w-[80%]">
+                  <Link target="_blank" className="small" href="tel:+77474918099">
+                    +7 747 491 80 99
+                    </Link>
+                  </li>
+                  <li className="mt-[20px] w-[80%]">
+                  <Link target="_blank" className="small" href="mailto:ecopallety@gmail.com">
+                  ecopallety@gmail.com
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </nav>

@@ -126,6 +126,10 @@ header {
         color: #646464;
         font-size: 20px;
         font-weight: 500;
+        &.small {
+          font-size: 16px;
+          color: #5371ff;
+        }
       }
     }
   }
