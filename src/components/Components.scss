@@ -143,6 +143,7 @@ header {
     border-radius: 30px;
     @media (max-width: 576px){
       padding: 10px !important;
+      height: 700px !important;
       border-radius: 20px !important;
     }
     .info {
@@ -166,6 +167,7 @@ header {
             font-size: 42px;
             margin-bottom: 40px;
             @media (max-width: 576px){
+              margin-bottom: 10px;
                 font-size: 28px !important;
             }
         }

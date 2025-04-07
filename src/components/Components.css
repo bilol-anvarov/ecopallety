@@ -198,6 +198,7 @@ header .header_ins .iconMenu.active {
 @media (max-width: 576px) {
   .sliderSection {
     padding: 10px !important;
+    height: 700px !important;
     border-radius: 20px !important;
   }
 }
@@ -238,6 +239,7 @@ header .header_ins .iconMenu.active {
 }
 @media (max-width: 576px) {
   .sliderSection .info h1 {
+    margin-bottom: 10px;
     font-size: 28px !important;
   }
 }
