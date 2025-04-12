@@ -51,10 +51,10 @@ export default function Footer() {
           Высокое качество, доступные цены и доставка по всей стране.
           </p>
           <div className="socials">
-            <Link href={"#!"}>
+            <Link href={"https://www.facebook.com/share/16N22qq9gy/?mibextid=wwXIfr"} target="_blank">
               <img src="/color.svg" alt="img" />
             </Link>
-            <Link href={"#!"}>
+            <Link href={"https://www.instagram.com/ecopallety.kz"} target="_blank">
               <img src="/Instagram.svg" alt="img" />
             </Link>
           </div>
